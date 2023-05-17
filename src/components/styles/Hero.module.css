@@ -1,0 +1,8 @@
+.heroHeaderContainer {
+	display: flex;
+	justify-content: flex;
+}
+
+.heroHeaderContainer .header {
+	font-size: 8rem;
+}

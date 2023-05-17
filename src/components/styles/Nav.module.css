@@ -1,0 +1,20 @@
+.navbar {
+	max-height: 4rem;
+	display: flex;
+	justify-content: space-around;
+
+	background-color: deeppink;
+}
+
+.navIcon img {
+	height: 100%;
+	object-fit: contain;
+}
+
+.navbar ul {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
