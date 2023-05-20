@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const withTM = require("next-transpile-modules")(["three"]);
 
-module.exports = nextConfig
+const nextConfig = { withTM };
+
+module.exports = nextConfig;
