@@ -1,8 +1,11 @@
 .heroHeaderContainer {
 	display: flex;
 	justify-content: flex;
+	padding: 6rem;
+	min-height: 100vh;
 }
 
 .heroHeaderContainer .header {
 	font-size: 8rem;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }

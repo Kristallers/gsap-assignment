@@ -1,0 +1,8 @@
+.aboutWrapper {
+	display: flex;
+}
+
+.aboutWrapper .aboutArticle {
+	border: 2px solid white;
+	flex: 1;
+}

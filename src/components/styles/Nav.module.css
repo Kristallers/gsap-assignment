@@ -2,12 +2,16 @@
 	max-height: 4rem;
 	display: flex;
 	justify-content: space-around;
-
-	background-color: deeppink;
+	font-size: 1.125rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 .navIcon img {
 	height: 100%;
+	opacity: 0;
 	object-fit: contain;
 }
 
