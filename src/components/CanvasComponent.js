@@ -14,6 +14,7 @@ import Nav from "./Nav";
 import { About } from "./About";
 import Footer from "./Footer";
 import { Bunny } from "./Bunny";
+import Contact from "./Contact";
 
 const CanvasComponent = () => {
   return (
@@ -37,8 +38,8 @@ const CanvasComponent = () => {
           scene={undefined} // adds the ability to pass a custom THREE.Scene, can also be a ref
           encoding={undefined} // adds the ability to pass a custom THREE.TextureEncoding (default: THREE.sRGBEncoding for an array of files and THREE.LinearEncoding for a single texture)
         /> */}
-        <mesh scale={0.25}>
-          <Bunny position={[-7, -10, 0]} />
+        <mesh scale={0.2}>
+          <Bunny position={[4, -10, 0]} />
         </mesh>
         <Scroll>
           {/* Canvas contents in here will scroll along */}
@@ -50,10 +51,15 @@ const CanvasComponent = () => {
           {/* DOM contents in here will scroll along */}
           <Nav />
           <Hero />
-          <h1>second page</h1>
-          <About style={{ position: "absolute", top: "100vh" }} />
-          <h1 style={{ position: "absolute", top: "200vh" }}>third page</h1>
-          <Footer />
+          <About
+            style={{
+              position: "absolute",
+              top: "100vh",
+              width: "100vw",
+              height: "100vh",
+            }}
+          />
+          <Contact style={{ position: "absolute", top: "200vh" }} />
         </Scroll>
       </ScrollControls>
     </>

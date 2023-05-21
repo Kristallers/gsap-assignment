@@ -1,11 +1,33 @@
 .heroHeaderContainer {
-	display: flex;
-	justify-content: flex;
-	padding: 6rem;
-	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 6rem;
+  min-height: 100vh;
 }
 
 .heroHeaderContainer .header {
-	font-size: 8rem;
-	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  font-size: 8rem;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.heroHeaderContainer .heroDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 4rem 0rem;
+  line-height: 1.5rem;
+  gap: 1rem;
+}
+
+.heroDescriptionContainer .readMoreButton {
+  max-width: fit-content;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #ffffff;
+  background: none;
+}
+
+.heroDescriptionContainer .readMoreButton:hover {
+  cursor: pointer;
 }

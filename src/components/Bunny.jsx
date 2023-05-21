@@ -28,27 +28,27 @@ export function Bunny(props) {
     console.log("timeline", tl)
 
     tl.current
-    .to(bunnyRef.current.rotation, {y: -1}, 2)
-    .to(bunnyRef.current.position, {x: 1}, 2)
+    .to(bunnyRef.current.rotation, {y: -0.5}, 1)
+    .to(bunnyRef.current.position, {x: 3}, 1)
 
-    .to(bunnyRef.current.rotation, {y: 1}, 6)   
-    .to(bunnyRef.current.position, {x: -1}, 6)
+    .to(bunnyRef.current.rotation, {y: 1}, 3)   
+    .to(bunnyRef.current.position, {x: -26, z: 2}, 3)
 
-    .to(bunnyRef.current.rotation, {y: 0}, 11)
-    .to(bunnyRef.current.rotation, {x: 1}, 11)
-    .to(bunnyRef.current.position, {x: 0}, 11)
+    .to(bunnyRef.current.rotation, {y: -1}, 11)
+    .to(bunnyRef.current.rotation, {x: 0}, 11)
+    .to(bunnyRef.current.position, {x: 5, z: -2}, 11)
 
-    .to(bunnyRef.current.rotation, {y: 0}, 13)
-    .to(bunnyRef.current.rotation, {x: -1}, 13)    
-    .to(bunnyRef.current.position, {x: 0}, 13)
+    .to(bunnyRef.current.rotation, {y: -0.5}, 13)
+    .to(bunnyRef.current.rotation, {x: 0}, 13)    
+    .to(bunnyRef.current.position, {x: 5, z: -2}, 13)
 
-    .to(bunnyRef.current.rotation, {y: 0}, 16)   
+    .to(bunnyRef.current.rotation, {y: -1}, 16)   
     .to(bunnyRef.current.rotation, {x: 0}, 16) 
-    .to(bunnyRef.current.position, {x: 0}, 16)    
+    .to(bunnyRef.current.position, {x: 6, z: -2}, 16)    
 
-    .to(bunnyRef.current.rotation, {y: 0}, 20)   
+    .to(bunnyRef.current.rotation, {y: -1}, 20)   
     .to(bunnyRef.current.rotation, {x: 0}, 20) 
-    .to(bunnyRef.current.position, {x: 0}, 20)   
+    .to(bunnyRef.current.position, {x: 6, z: -2}, 20)   
   }, [])
 
   return (

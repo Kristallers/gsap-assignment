@@ -1,8 +1,26 @@
 .aboutWrapper {
-	display: flex;
+  color: rgb(19, 19, 19);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
-.aboutWrapper .aboutArticle {
-	border: 2px solid white;
-	flex: 1;
+.aboutWrapper .aboutArticle:nth-child(-n + 2) {
+  margin-left: auto;
+  margin-right: 0;
+  background-color: rgba(240, 248, 255, 0.5);
+  border: 2px solid black;
+  width: 40rem;
+  flex: 1;
+}
+
+.aboutWrapper .aboutArticle:nth-child(3) {
+  background-color: rgba(240, 248, 255, 0.5);
+  border: 2px solid black;
+  width: 40rem;
+  flex: 1;
+}
+
+.aboutArticle .articleTitle {
+  padding: 1rem;
 }

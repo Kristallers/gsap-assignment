@@ -1,0 +1,37 @@
+.contactWrapper {
+  padding: 3rem;
+  gap: 8rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contactWrapper .contactHeader {
+  font-size: 6rem;
+}
+
+.contactWrapper .contactForm {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm .contactInput {
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  border: 2px solid rgb(20, 20, 20);
+}
+
+.contactForm .contactButton {
+  align-self: center;
+  max-width: fit-content;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #ffffff;
+  background: none;
+}
+
+.contactForm .contactButton:hover {
+  cursor: pointer;
+}
